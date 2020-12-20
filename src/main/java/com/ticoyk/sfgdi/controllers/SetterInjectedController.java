@@ -8,9 +8,10 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class SetterInjectedController {
     
-    @Autowired
     public GreetingService greetingService;
 
+    // Setter is specified on the Setter Method
+    @Autowired
     public void setGreetingService(GreetingService greetingService){
         this.greetingService = greetingService;
     }

@@ -5,10 +5,10 @@ import com.ticoyk.sfgdi.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
+// No need to specify auto wired
 @Controller
 public class ConstructorInjectedController {
 
-    @Autowired
     private final GreetingService greetingService;
 
     public ConstructorInjectedController(GreetingService greetingService){
