@@ -1,6 +1,6 @@
 package com.ticoyk.sfgdi.controllers;
 
-import com.ticoyk.sfgdi.services.GreetingServiceImpl;
+import com.ticoyk.sfgdi.services.ConstructorGreetingService;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,7 @@ public class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp(){
-        controller = new ConstructorInjectedController( new GreetingServiceImpl());
+        controller = new ConstructorInjectedController( new ConstructorGreetingService());
     }
 
     @Test
